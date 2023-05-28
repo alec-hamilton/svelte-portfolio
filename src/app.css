@@ -9,10 +9,10 @@
 	}
 
 	h1 {
-		@apply text-8xl;
+		@apply text-6xl sm:text-8xl;
 	}
 
 	h2 {
-		@apply text-xl font-bold;
+		@apply text-xl sm:text-2xl;
 	}
 }
