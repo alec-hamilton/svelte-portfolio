@@ -13,5 +13,6 @@
 <style lang="postcss">
 	:global(body) {
 		background-color: theme(colors.bg);
+		font-family: theme(fontFamily.body);
 	}
 </style>

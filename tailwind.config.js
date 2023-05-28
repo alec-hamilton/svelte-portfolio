@@ -9,6 +9,7 @@ export default {
 			},
 			fontFamily: {
 				display: ["terminal"],
+				body: ["aspekta"],
 			},
 		},
 	},

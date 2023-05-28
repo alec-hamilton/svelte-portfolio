@@ -8,6 +8,11 @@
 		src: url("/fonts/terminal-grotesque_open.otf");
 	}
 
+	@font-face {
+		font-family: "aspekta";
+		src: url("/fonts/Aspekta-500.otf");
+	}
+
 	h1 {
 		@apply text-6xl sm:text-8xl;
 	}
