@@ -1,2 +1,17 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<script>
+	import Project from "../components/Project.svelte";
+	import { projects} from "../data/projects.js";
+</script>
+
+<main>
+	{#each projects as project}
+		<Project
+			name={project.name}
+			imageUrl={project.imageUrl}
+			description={project.description}
+			stack={project.stack}
+			githubUrl={project.githubUrl}
+			liveUrl={project.liveUrl}
+		/>
+	{/each}
+</main>

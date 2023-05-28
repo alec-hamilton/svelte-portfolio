@@ -3,7 +3,14 @@ export default {
 	purge: ["./src/**/*.svelte", ".src/**/*.css"],
 	content: ["./src/**/*.{html,js,svelte,ts}"],
 	theme: {
-		extend: {}
+		extend: {
+			colors: {
+				bg: "#E7E2D3",
+			},
+			fontFamily: {
+				display: ["terminal"],
+			},
+		},
 	},
-	plugins: []
+	plugins: [],
 };

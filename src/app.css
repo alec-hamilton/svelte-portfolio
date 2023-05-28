@@ -1,3 +1,18 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+	@font-face {
+		font-family: "terminal";
+		src: url("/fonts/terminal-grotesque_open.otf");
+	}
+
+	h1 {
+		@apply text-6xl sm:text-8xl;
+	}
+
+	h2 {
+		@apply text-xl sm:text-2xl;
+	}
+}
