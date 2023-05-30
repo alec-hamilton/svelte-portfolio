@@ -22,8 +22,8 @@
       {/each}
     </div>
   </div>
-  <div class="flex flex-row">
-    <p>{githubUrl}</p>
-    <p>{liveUrl}</p>
+  <div class="grid grid-cols-2 border-b-2 border-slate-800">
+    <a href={githubUrl} class="w-100 py-2 text-center border-r border-slate-800">GitHub</a>
+    <a href={liveUrl} class="w-100 py-2 text-center border-r border-slate-800">Live version</a>
   </div>
 </div>
