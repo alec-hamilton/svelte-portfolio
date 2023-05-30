@@ -7,7 +7,7 @@
   export let liveUrl;
 </script>
 
-<div>
+<section class="m-4 border-2 border-slate-800">
   <h3 class="p-4 border-b-2 border-slate-800">{name}</h3>
   <p>{imageUrl}</p>
   <div class="p-4 border-b-2 border-slate-800">
@@ -22,8 +22,11 @@
       {/each}
     </div>
   </div>
-  <div class="grid grid-cols-2 border-b-2 border-slate-800">
-    <a href={githubUrl} class="w-100 py-2 text-center border-r border-slate-800">GitHub</a>
-    <a href={liveUrl} class="w-100 py-2 text-center border-r border-slate-800">Live version</a>
+  <div class="grid grid-cols-2 border-slate-800">
+    <a href={githubUrl} class="w-100 py-2 text-center underline border-r border-slate-800">GitHub</a
+    >
+    <a href={liveUrl} class="w-100 py-2 text-center underline border-l border-slate-800"
+      >Live version</a
+    >
   </div>
-</div>
+</section>

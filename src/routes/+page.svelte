@@ -4,7 +4,7 @@
 </script>
 
 <main>
-	<h2 class="p-4 border-b-2 border-slate-800">Projects</h2>
+	<h2 class="p-4 border-b-2 sticky top-0 bg-bg border-slate-800">Projects</h2>
 	{#each projects as project}
 		<Project
 			name={project.name}
