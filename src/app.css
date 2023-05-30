@@ -3,21 +3,29 @@
 @tailwind utilities;
 
 @layer base {
-	@font-face {
-		font-family: "terminal";
-		src: url("/fonts/terminal-grotesque_open.otf");
-	}
+  @font-face {
+    font-family: "terminal";
+    src: url("/fonts/terminal-grotesque_open.otf");
+  }
 
-	@font-face {
-		font-family: "aspekta";
-		src: url("/fonts/Aspekta-500.otf");
-	}
+  @font-face {
+    font-family: "aspekta";
+    src: url("/fonts/Aspekta-500.otf");
+  }
 
-	h1 {
-		@apply text-6xl sm:text-8xl;
-	}
+  h1 {
+    @apply text-6xl sm:text-8xl;
+  }
 
-	h2 {
-		@apply text-xl sm:text-2xl;
-	}
+  h2 {
+    @apply text-3xl sm:text-5xl;
+  }
+
+  h3 {
+    @apply text-xl sm:text-3xl;
+  }
+
+  h4 {
+    @apply text-lg sm:text-2xl;
+  }
 }

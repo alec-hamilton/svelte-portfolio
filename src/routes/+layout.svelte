@@ -4,7 +4,7 @@
 
 <header class="flex flex-col border-b-2 border-slate-800">
 	<h1 class="font-display">Alec Hamilton</h1>
-	<h2>Full Stack Developer</h2>
+	<p>Full Stack Developer</p>
 	<address class="not-italic"><a href="mailto:alechamilton.dev@gmail.com">alechamilton.dev@gmail.com</a></address>
 </header>
 
