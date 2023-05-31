@@ -5,9 +5,7 @@
 </script>
 
 <Header />
-
 <slot />
-
 <Footer />
 
 <style lang="postcss">
