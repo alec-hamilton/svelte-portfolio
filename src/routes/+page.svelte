@@ -6,8 +6,8 @@
   import { skills } from "../data/skills.js";
 </script>
 
-<main class="flex">
-  <div>
+<main class="grid grid-cols-5">
+  <div class="col-span-3">
     <h2 class="p-4 border-b-2 sticky top-0 bg-bg border-slate-800">Projects</h2>
     {#each projects as project}
       <Project
@@ -22,20 +22,29 @@
     <Skills />
     <About />
   </div>
-  <nav>
-    <h2>Projects</h2>
-    <div class="flex flex-col">
+  <nav class="flex flex-col p-4 col-span-2 border-l-2 border-slate-800">
+    <h3 class="pb-4">Projects</h3>
+    <ul class="flex flex-col pb-4 gap-2">
       {#each projects as project}
-        <a>{project.name}</a>
+        <li class="flex items-center">
+          <div class="w-4 h-4 rounded-full mr-4 border-2 border-slate-800" />
+          <a>{project.name}</a>
+        </li>
       {/each}
-    </div>
-    <h2>Skills</h2>
-    <div class="flex flex-col">
+    </ul>
+    <h3 class="pb-4">Skills</h3>
+    <ul class="flex flex-col pb-4 gap-2">
       {#each skills as skill}
-        <a>{skill.heading}</a>
+        <li class="flex items-center">
+          <div class="w-4 h-4 rounded-full mr-4 border-2 border-slate-800" />
+          <a>{skill.heading}</a>
+        </li>
       {/each}
+    </ul>
+    <h3 class="pb-4">About me</h3>
+    <div class="flex items-center">
+      <div class="w-4 h-4 rounded-full mr-4 border-2 border-slate-800" />
+      <a>About me</a>
     </div>
-    <h2>About me</h2>
-    <a>About me</a>
   </nav>
 </main>
