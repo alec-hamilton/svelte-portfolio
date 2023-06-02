@@ -1,32 +1,57 @@
 <script>
+  import { onMount } from "svelte";
+
+  import About from "../components/About.svelte";
   import Project from "../components/Project.svelte";
+  import Nav from "../components/layout/Nav.svelte";
   import Skills from "../components/Skills.svelte";
+
   import { projects } from "../data/projects.js";
+
+  onMount(() => {
+    const bullets = document.querySelectorAll("li > div");
+    const sections = document.querySelectorAll("[data-scrollable-section=true]");
+
+    const handleScroll = () => {
+      let scrollPosition = window.scrollY;
+      let closestIndex = 0;
+      let smallestPositiveDistance = Infinity;
+
+      const stickyHeadingHeight = 98;
+
+      // console.log(scrollPosition);
+      // console.log(sections[0].offsetHeight);
+
+      for (let i = 0; i < sections.length; i++) {
+        let distanceFromTop =
+          sections[i].offsetTop + sections[i].offsetHeight - scrollPosition - stickyHeadingHeight;
+
+        if (distanceFromTop > 0 && distanceFromTop < smallestPositiveDistance) {
+          smallestPositiveDistance = distanceFromTop;
+          closestIndex = i;
+        }
+      }
+
+      bullets.forEach((bullet) => {
+        bullet.classList.remove("bg-slate-800");
+      });
+
+      bullets[closestIndex].classList.add("bg-slate-800");
+    };
+
+    handleScroll();
+    window.addEventListener("scroll", handleScroll);
+  });
 </script>
 
-<main>
-  <h2 class="p-4 border-b-2 sticky top-0 bg-bg border-slate-800">Projects</h2>
-  {#each projects as project}
-    <Project
-      name={project.name}
-      imageUrl={project.imageUrl}
-      description={project.description}
-      stack={project.stack}
-      githubUrl={project.githubUrl}
-      liveUrl={project.liveUrl}
-    />
-  {/each}
-  <h2 class="p-4 border-y-2 sticky top-0 bg-bg border-slate-800">Skills</h2>
-  <Skills />
-  <h2 class="p-4 border-y-2 sticky top-0 bg-bg border-slate-800">About me</h2>
-  <p class="p-4">
-    I am a full stack developer enrolled on the Full Stack Track course at iO Academy. I bring a
-    unique, creative edge to my work having a background both academically and professionally in
-    design. My experience as a designer has given me a diverse set of transferable skills that I am
-    eager to apply to my career as a developer. I’m passionate about electronic music and have a
-    monthly radio show. On the weekends, you can probably find me exploring the countryside with my
-    camera. I’m open, collaborative and have a fondness to make a positive impact on the world
-    through the work that I do. I am excited to explore different ways of achieving this, as well as
-    to meeting other like-minded people in the process.
-  </p>
+<main class="sm:grid grid-cols-5">
+  <div class="col-span-3">
+    <h2 class="p-4 sm:p-6 border-b-2 sticky top-0 bg-bg border-slate-800">Projects</h2>
+    {#each projects as { name, id, description, stack, githubUrl, liveUrl }}
+      <Project {name} {id} {description} {stack} {githubUrl} {liveUrl} />
+    {/each}
+    <Skills />
+    <About />
+  </div>
+  <Nav />
 </main>

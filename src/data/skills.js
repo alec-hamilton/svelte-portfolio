@@ -1,14 +1,20 @@
 export const skills = [
   {
     heading: "Frontend",
-    list: ["React", "NextJS", "TypeScript", "TailwindCSS"],
+    id: "frontend",
+    listLeft: ["React", "NextJS", "SvelteKit"],
+    listRight: ["TypeScript", "TailwindCSS", "MUI"],
   },
   {
-    heading: "Frontend",
-    list: ["React", "NextJS", "TypeScript", "TailwindCSS"],
+    heading: "Backend",
+    id: "backend",
+    listLeft: ["NodeJS", "Express"],
+    listRight: ["MongoDB", "MySQL"],
   },
   {
-    heading: "Frontend",
-    list: ["React", "NextJS", "TypeScript", "TailwindCSS"],
+    heading: "Tools",
+    id: "tools",
+    listLeft: ["Git", "VSCode", "Vite"],
+    listRight: ["Jira", "Figma"],
   },
 ];
