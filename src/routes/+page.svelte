@@ -47,16 +47,8 @@
 <main class="sm:grid grid-cols-5">
   <div class="col-span-3">
     <h2 class="p-4 sm:p-6 border-b-2 sticky top-0 bg-bg border-slate-800">Projects</h2>
-    {#each projects as project}
-      <Project
-        name={project.name}
-        id={project.id}
-        imageUrl={project.imageUrl}
-        description={project.description}
-        stack={project.stack}
-        githubUrl={project.githubUrl}
-        liveUrl={project.liveUrl}
-      />
+    {#each projects as { name, id, description, stack, githubUrl, liveUrl }}
+      <Project {name} {id} {description} {stack} {githubUrl} {liveUrl} />
     {/each}
     <Skills />
     <About />

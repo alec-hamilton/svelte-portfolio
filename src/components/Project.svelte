@@ -1,7 +1,6 @@
 <script>
   export let name;
   export let id;
-  export let imageUrl;
   export let description;
   export let stack;
   export let githubUrl;
@@ -10,7 +9,6 @@
 
 <section class="border-b-2 border-slate-800" {id} data-scrollable-section="true">
   <h3 class="p-4 sm:p-6 border-b-2 border-slate-800">{name}</h3>
-  <p>{imageUrl}</p>
   <div class="p-4 sm:p-6 border-b-2 border-slate-800">
     <h4 class="pb-2 sm:pb-4">Description</h4>
     <p>{description}</p>
