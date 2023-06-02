@@ -8,7 +8,7 @@
   };
 </script>
 
-<nav class="hidden sm:flex flex-col p-4 col-span-2 border-l-2 border-slate-800">
+<nav class="hidden sm:flex flex-col p-4 col-span-2 border-l-4 border-slate-800">
   <div class="sticky top-4">
     <h3 class="pb-4">Projects</h3>
     <ul class="flex flex-col pb-4 gap-2">
