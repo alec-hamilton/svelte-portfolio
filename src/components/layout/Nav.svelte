@@ -4,7 +4,7 @@
 
   const scrollToSection = (event) => {
     let section = document.getElementById(event.target.getAttribute("href").substring(1));
-    section.scrollIntoView({ behavior: "smooth", block: "center" });
+    section.scrollIntoView({ behavior: "smooth" });
   };
 </script>
 

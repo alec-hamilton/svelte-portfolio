@@ -3,6 +3,10 @@
 @tailwind utilities;
 
 @layer base {
+  html {
+    scroll-padding: 82px;
+  }
+  
   @font-face {
     font-family: "terminal";
     src: url("/fonts/terminal-grotesque_open.otf");
