@@ -1,4 +1,4 @@
-<h2 class="p-4 border-y-2 sticky top-0 bg-bg border-slate-800" data-bullet-heading="true">About me</h2>
+<h2 class="p-4 border-y-2 sticky top-0 bg-bg border-slate-800" data-bullet-heading="true" id="about">About me</h2>
   <p class="p-4">
     I am a full stack developer enrolled on the Full Stack Track course at iO Academy. I bring a
     unique, creative edge to my work having a background both academically and professionally in

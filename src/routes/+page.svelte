@@ -44,6 +44,7 @@
     {#each projects as project}
       <Project
         name={project.name}
+				id={project.id}
         imageUrl={project.imageUrl}
         description={project.description}
         stack={project.stack}

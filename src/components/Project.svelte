@@ -1,5 +1,6 @@
 <script>
   export let name;
+  export let id;
   export let imageUrl;
   export let description;
   export let stack;
@@ -7,7 +8,7 @@
   export let liveUrl;
 </script>
 
-<section class="border-b-2 border-slate-800">
+<section class="border-b-2 border-slate-800" id={id}>
   <h3 class="p-4 border-b-2 border-slate-800" data-bullet-heading="true">{name}</h3>
   <p>{imageUrl}</p>
   <div class="p-4 border-b-2 border-slate-800">
