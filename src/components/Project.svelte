@@ -8,7 +8,7 @@
 </script>
 
 <section class="m-4 border-2 border-slate-800">
-  <h3 class="p-4 border-b-2 border-slate-800">{name}</h3>
+  <h3 class="p-4 border-b-2 border-slate-800" data-bullet-heading="true">{name}</h3>
   <p>{imageUrl}</p>
   <div class="p-4 border-b-2 border-slate-800">
     <h4 class="pb-2">Description</h4>
