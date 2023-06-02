@@ -8,10 +8,10 @@
   };
 </script>
 
-<nav class="hidden sm:flex flex-col p-4 col-span-2 border-l-4 border-slate-800">
+<nav class="hidden sm:flex flex-col p-4 sm:p-6 col-span-2 border-l-4 border-slate-800">
   <div class="sticky top-4">
-    <h3 class="pb-4">Projects</h3>
-    <ul class="flex flex-col pb-4 gap-2">
+    <h3 class="pb-6">Projects</h3>
+    <ul class="flex flex-col pb-6 gap-2">
       {#each projects as project}
         <li class="flex items-center">
           <div class="w-4 h-4 rounded-full mr-4 border-2 border-slate-800" />
@@ -19,8 +19,8 @@
         </li>
       {/each}
     </ul>
-    <h3 class="pb-4">Skills</h3>
-    <ul class="flex flex-col pb-4 gap-2">
+    <h3 class="pb-6">Skills</h3>
+    <ul class="flex flex-col pb-6 gap-2">
       {#each skills as skill}
         <li class="flex items-center">
           <div class="w-4 h-4 rounded-full mr-4 border-2 border-slate-800" />
@@ -28,7 +28,7 @@
         </li>
       {/each}
     </ul>
-    <h3 class="pb-4">About me</h3>
+    <h3 class="pb-6">About me</h3>
     <ul class="flex items-center">
       <li class="flex items-center">
         <div class="w-4 h-4 rounded-full mr-4 border-2 border-slate-800" />

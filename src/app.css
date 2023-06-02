@@ -4,9 +4,9 @@
 
 @layer base {
   html {
-    scroll-padding: 82px;
+    scroll-padding: 98px;
   }
-  
+
   @font-face {
     font-family: "terminal";
     src: url("/fonts/terminal-grotesque_open.otf");

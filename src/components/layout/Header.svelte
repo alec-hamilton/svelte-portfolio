@@ -1,4 +1,4 @@
-<header class="flex flex-col p-4 border-b-4 border-slate-800">
+<header class="flex flex-col p-4 sm:p-6 border-b-4 border-slate-800">
   <h1 class="font-display">Alec Hamilton</h1>
   <p class="text-xl">Full Stack Developer</p>
   <address class="not-italic text-sm pt-1 underline">
