@@ -12,6 +12,15 @@
     const bullets = document.querySelectorAll("li > div");
     const sections = document.querySelectorAll("[data-scrollable-section=true]");
 
+    const isScrolledToBottom = () => {
+      const scrollableElement = document.documentElement;
+      const isScrolledToBottom =
+        scrollableElement.scrollTop + scrollableElement.clientHeight >=
+        scrollableElement.scrollHeight;
+
+      return isScrolledToBottom;
+    };
+
     const handleScroll = () => {
       let scrollPosition = window.scrollY;
       let closestIndex = 0;
@@ -19,16 +28,18 @@
 
       const stickyHeadingHeight = 98;
 
-      // console.log(scrollPosition);
-      // console.log(sections[0].offsetHeight);
-
       for (let i = 0; i < sections.length; i++) {
-        let distanceFromTop =
-          sections[i].offsetTop + sections[i].offsetHeight - scrollPosition - stickyHeadingHeight;
+        if (isScrolledToBottom()) {
+          closestIndex = sections.length - 1;
+          break;
+        } else {
+          let distanceFromTop =
+            sections[i].offsetTop + sections[i].offsetHeight - scrollPosition - stickyHeadingHeight;
 
-        if (distanceFromTop > 0 && distanceFromTop < smallestPositiveDistance) {
-          smallestPositiveDistance = distanceFromTop;
-          closestIndex = i;
+          if (distanceFromTop > 0 && distanceFromTop < smallestPositiveDistance) {
+            smallestPositiveDistance = distanceFromTop;
+            closestIndex = i;
+          }
         }
       }
 

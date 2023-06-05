@@ -22,10 +22,17 @@
     </div>
   </div>
   <div class="grid grid-cols-2 border-slate-800">
-    <a href={githubUrl} class="w-100 py-2 sm:py-4 text-center underline border-r border-slate-800">GitHub</a
+    <a
+      href={githubUrl}
+      target="_blank"
+      rel="noreferrer"
+      class="w-100 py-2 sm:py-4 text-center underline border-r border-slate-800">GitHub</a
     >
-    <a href={liveUrl} class="w-100 py-2 sm:py-4 text-center underline border-l border-slate-800"
-      >Live version</a
+    <a
+      href={liveUrl}
+      target="_blank"
+      rel="noreferrer"
+      class="w-100 py-2 sm:py-4 text-center underline border-l border-slate-800">Live version</a
     >
   </div>
 </section>
