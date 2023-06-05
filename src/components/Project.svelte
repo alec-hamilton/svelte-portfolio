@@ -15,7 +15,7 @@
   </div>
   <div class="p-4 sm:p-6 border-b-2 border-slate-800">
     <h4 class="pb-2 sm:pb-4">Stack</h4>
-    <div class="flex flex-row gap-2">
+    <div class="flex flex-row flex-wrap gap-2">
       {#each stack as item}
         <div class="p-2 border border-slate-800">{item}</div>
       {/each}
