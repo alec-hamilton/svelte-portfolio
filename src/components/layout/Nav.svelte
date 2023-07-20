@@ -4,8 +4,13 @@
 
   const scrollToSection = (event) => {
     let section = document.getElementById(event.target.getAttribute("href").substring(1));
+    console.log(section);
     section.scrollIntoView({ behavior: "smooth" });
   };
+
+  // const scrollToTop = (event) => {
+  //   window.scrollTo({ top: 0, behavior: "smooth" });
+  // };
 </script>
 
 <nav class="hidden sm:flex flex-col p-4 sm:p-6 col-span-2 border-l-4 border-slate-800">
