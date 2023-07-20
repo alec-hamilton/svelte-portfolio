@@ -3,7 +3,7 @@
 </script>
 
 <h2 class="p-4 sm:p-6 border-y-2 sticky top-0 bg-bg border-slate-800">Skills</h2>
-<section class="flex flex-col">
+<section class="flex flex-col border-b-2 border-slate-800">
   {#each skills as skill}
     <div class="border-b-2 border-slate-800" id={skill.id} data-scrollable-section="true">
       <h3 class="p-4 sm:p-6 border-b-2 border-slate-800">{skill.heading}</h3>

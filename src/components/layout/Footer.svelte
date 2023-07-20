@@ -1,4 +1,4 @@
-<footer class="flex flex-col p-4 sm:p-6 gap-2 border-t-2 border-slate-800">
+<footer class="flex flex-col p-4 sm:p-6 gap-2 border-t-4 border-slate-800">
   <address class="not-italic underline">
     <a href="mailto:alechamilton.dev@gmail.com">alechamilton.dev@gmail.com</a>
   </address>

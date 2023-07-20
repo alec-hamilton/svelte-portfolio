@@ -8,61 +8,61 @@
 
   import { projects } from "../data/projects.js";
 
-  onMount(() => {
-    const bullets = document.querySelectorAll("li > div");
-    const sections = document.querySelectorAll("[data-scrollable-section=true]");
+  // onMount(() => {
+  //   const bullets = document.querySelectorAll("li > div");
+  //   const sections = document.querySelectorAll("[data-scrollable-section=true]");
 
-    const isScrolledToBottom = () => {
-      const scrollableElement = document.documentElement;
-      const isScrolledToBottom =
-        scrollableElement.scrollTop + scrollableElement.clientHeight >=
-        scrollableElement.scrollHeight;
+  //   const isScrolledToBottom = () => {
+  //     const scrollableElement = document.documentElement;
+  //     const isScrolledToBottom =
+  //       scrollableElement.scrollTop + scrollableElement.clientHeight >=
+  //       scrollableElement.scrollHeight;
 
-      return isScrolledToBottom;
-    };
+  //     return isScrolledToBottom;
+  //   };
 
-    const handleScroll = () => {
-      let scrollPosition = window.scrollY;
-      let closestIndex = 0;
-      let smallestPositiveDistance = Infinity;
+  //   const handleScroll = () => {
+  //     let scrollPosition = window.scrollY;
+  //     let closestIndex = 0;
+  //     let smallestPositiveDistance = Infinity;
 
-      const stickyHeadingHeight = 98;
+  //     const stickyHeadingHeight = 98;
 
-      for (let i = 0; i < sections.length; i++) {
-        if (isScrolledToBottom()) {
-          closestIndex = sections.length - 1;
-          break;
-        } else {
-          let distanceFromTop =
-            sections[i].offsetTop + sections[i].offsetHeight - scrollPosition - stickyHeadingHeight;
+  //     for (let i = 0; i < sections.length; i++) {
+  //       if (isScrolledToBottom()) {
+  //         closestIndex = sections.length - 1;
+  //         break;
+  //       } else {
+  //         let distanceFromTop =
+  //           sections[i].offsetTop + sections[i].offsetHeight - scrollPosition - stickyHeadingHeight;
 
-          if (distanceFromTop > 0 && distanceFromTop < smallestPositiveDistance) {
-            smallestPositiveDistance = distanceFromTop;
-            closestIndex = i;
-          }
-        }
-      }
+  //         if (distanceFromTop > 0 && distanceFromTop < smallestPositiveDistance) {
+  //           smallestPositiveDistance = distanceFromTop;
+  //           closestIndex = i;
+  //         }
+  //       }
+  //     }
 
-      bullets.forEach((bullet) => {
-        bullet.classList.remove("bg-slate-800");
-      });
+  //     bullets.forEach((bullet) => {
+  //       bullet.classList.remove("bg-slate-800");
+  //     });
 
-      bullets[closestIndex].classList.add("bg-slate-800");
-    };
+  //     bullets[closestIndex].classList.add("bg-slate-800");
+  //   };
 
-    handleScroll();
-    window.addEventListener("scroll", handleScroll);
-  });
+  //   handleScroll();
+  //   window.addEventListener("scroll", handleScroll);
+  // });
 </script>
 
 <main class="sm:grid grid-cols-5">
   <div class="col-span-3">
-    <h2 class="p-4 sm:p-6 border-b-2 sticky top-0 bg-bg border-slate-800">Projects</h2>
+    <About />
+    <Skills />
+    <h2 class="p-4 sm:p-6 sticky top-0 bg-bg border-slate-800">Projects</h2>
     {#each projects as { name, id, description, stack, githubUrl, liveUrl }}
       <Project {name} {id} {description} {stack} {githubUrl} {liveUrl} />
     {/each}
-    <Skills />
-    <About />
   </div>
   <Nav />
 </main>
