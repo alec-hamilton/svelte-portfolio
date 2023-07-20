@@ -17,15 +17,15 @@ export const projects = [
     githubUrl: "https://github.com/alec-hamilton/pg-react-vite",
     liveUrl: "https://pleasuregallery.net/",
   },
-  {
-    name: "Tubular",
-    id: "project3",
-    description:
-      "Tubular is a full-stack web application built using the MERN stack. Serving as a journey planning app, Tubular calculates trips between two tube stations, accommodating both direct journeys and those with transfers.",
-    stack: ["NodeJS", "Express", "React", "MongoDB"],
-    githubUrl: "https://github.com/iO-Academy/2022-mar-london-underground-be",
-    liveUrl: "",
-  },
+  // {
+  //   name: "Tubular",
+  //   id: "project3",
+  //   description:
+  //     "Tubular is a full-stack web application built using the MERN stack. Serving as a journey planning app, Tubular calculates trips between two tube stations, accommodating both direct journeys and those with transfers.",
+  //   stack: ["NodeJS", "Express", "React", "MongoDB"],
+  //   githubUrl: "https://github.com/iO-Academy/2022-mar-london-underground-be",
+  //   liveUrl: "",
+  // },
   {
     name: "Portfolio",
     id: "project4",
@@ -33,6 +33,6 @@ export const projects = [
       "This portfolio embraces the Brutalist style, which is a developing preference of mine. Constructed using SvelteKit and deployed through Vercel, the aesthetic reflects my admiration for the simplicity and rawness that the Brutalist style embodies.",
     stack: ["SvelteKit", "TailwindCSS"],
     githubUrl: "https://github.com/alec-hamilton/svelte-portfolio",
-    liveUrl: "",
+    liveUrl: "#",
   },
 ];
