@@ -26,7 +26,7 @@
       let closestIndex = 0;
       let smallestPositiveDistance = Infinity;
 
-      const stickyHeadingHeight = 98;
+      const stickyHeadingHeight = document.querySelector("[data-sticky-heading=true]").offsetHeight;
 
       for (let i = 0; i < sections.length; i++) {
         if (isScrolledToBottom()) {

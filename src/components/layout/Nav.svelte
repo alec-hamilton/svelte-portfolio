@@ -4,13 +4,13 @@
 
   const scrollToSection = (event) => {
     let section = document.getElementById(event.target.getAttribute("href").substring(1));
-    console.log(section);
     section.scrollIntoView({ behavior: "smooth" });
   };
 
-  // const scrollToTop = (event) => {
-  //   window.scrollTo({ top: 0, behavior: "smooth" });
-  // };
+  const scrollToTop = (event) => {
+    const headerHeight = document.querySelector("header").offsetHeight;
+    window.scrollTo({ top: headerHeight, behavior: "smooth" });
+  };
 </script>
 
 <nav class="hidden sm:flex flex-col p-4 sm:p-10 col-span-2 border-l-8 border-slate-800">
@@ -19,7 +19,7 @@
     <ul class="flex items-center pb-10">
       <li class="flex items-center">
         <div class="w-4 h-4 rounded-full mr-4 border-2 border-slate-800" />
-        <a href="#about" on:click|preventDefault={scrollToSection}>About me</a>
+        <a href="#about" on:click|preventDefault={scrollToTop}>About me</a>
       </li>
     </ul>
     <h3 class="pb-8">Skills</h3>
