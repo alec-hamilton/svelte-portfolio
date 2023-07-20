@@ -26,7 +26,7 @@
       let closestIndex = 0;
       let smallestPositiveDistance = Infinity;
 
-      const stickyHeadingHeight = 98;
+      const stickyHeadingHeight = document.querySelector("[data-sticky-heading=true]").offsetHeight;
 
       for (let i = 0; i < sections.length; i++) {
         if (isScrolledToBottom()) {
@@ -44,10 +44,10 @@
       }
 
       bullets.forEach((bullet) => {
-        bullet.classList.remove("bg-slate-800");
+        bullet.classList.remove("bg-zinc-800");
       });
 
-      bullets[closestIndex].classList.add("bg-slate-800");
+      bullets[closestIndex].classList.add("bg-zinc-800");
     };
 
     handleScroll();
@@ -57,12 +57,12 @@
 
 <main class="sm:grid grid-cols-5">
   <div class="col-span-3">
-    <h2 class="p-4 sm:p-6 border-b-2 sticky top-0 bg-bg border-slate-800">Projects</h2>
+    <About />
+    <Skills />
+    <h2 class="p-4 sm:p-10 sticky top-0 bg-bg border-b-4 border-zinc-800">Projects</h2>
     {#each projects as { name, id, description, stack, githubUrl, liveUrl }}
       <Project {name} {id} {description} {stack} {githubUrl} {liveUrl} />
     {/each}
-    <Skills />
-    <About />
   </div>
   <Nav />
 </main>

@@ -4,7 +4,7 @@
 
 @layer base {
   html {
-    scroll-padding: 98px;
+    scroll-padding: 8.25rem;
   }
 
   @font-face {
@@ -17,8 +17,12 @@
     src: url("/fonts/Aspekta-500.otf");
   }
 
+  body {
+    @apply text-zinc-800;
+  }
+
   h1 {
-    @apply text-6xl sm:text-8xl;
+    @apply text-8xl sm:text-8xl;
   }
 
   h2 {
