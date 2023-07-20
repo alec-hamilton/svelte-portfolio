@@ -1,3 +1,8 @@
+
+<svelte:head>
+  <title>Alec Hamilton - Full Stack Developer</title>
+</svelte:head>
+
 <script>
   import { onMount } from "svelte";
 
