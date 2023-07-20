@@ -44,10 +44,10 @@
       }
 
       bullets.forEach((bullet) => {
-        bullet.classList.remove("bg-slate-800");
+        bullet.classList.remove("bg-zinc-800");
       });
 
-      bullets[closestIndex].classList.add("bg-slate-800");
+      bullets[closestIndex].classList.add("bg-zinc-800");
     };
 
     handleScroll();
@@ -59,7 +59,7 @@
   <div class="col-span-3">
     <About />
     <Skills />
-    <h2 class="p-4 sm:p-10 sticky top-0 bg-bg border-b-4 border-slate-800">Projects</h2>
+    <h2 class="p-4 sm:p-10 sticky top-0 bg-bg border-b-4 border-zinc-800">Projects</h2>
     {#each projects as { name, id, description, stack, githubUrl, liveUrl }}
       <Project {name} {id} {description} {stack} {githubUrl} {liveUrl} />
     {/each}

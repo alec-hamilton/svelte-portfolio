@@ -1,5 +1,5 @@
-<section class="border-b-8 border-slate-800" id="about" data-scrollable-section="true">
-  <h2 class="p-4 sm:p-10 border-b-2 bg-bg border-slate-800">About me</h2>
+<section class="border-b-8 border-zinc-800" id="about" data-scrollable-section="true">
+  <h2 class="p-4 sm:p-10 border-b-2 bg-bg border-zinc-800">About me</h2>
   <p class="p-4 sm:p-10">
     I am a full stack developer with one year of professional experience. With a solid foundation
     both academically and professionally in design, I bring a unique and creative edge to my work.

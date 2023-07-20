@@ -7,32 +7,34 @@
   export let liveUrl;
 </script>
 
-<section {id} data-scrollable-section="true" class="border-b-4 border-slate-800 last:border-0">
-  <h3 class="p-4 sm:p-10 border-b-2 border-slate-800">{name}</h3>
-  <div class="p-4 sm:p-10 border-b-2 border-slate-800">
+<section {id} data-scrollable-section="true" class="border-b-4 border-zinc-800 last:border-0">
+  <h3 class="p-4 sm:p-10 border-b-2 border-zinc-800">{name}</h3>
+  <div class="p-4 sm:p-10 border-b-2 border-zinc-800">
     <h4 class="pb-2 sm:pb-8">Description</h4>
     <p>{description}</p>
   </div>
-  <div class="p-4 sm:p-10 border-b-2 border-slate-800">
+  <div class="p-4 sm:p-10 border-b-2 border-zinc-800">
     <h4 class="pb-2 sm:pb-8">Stack</h4>
     <div class="flex flex-row flex-wrap gap-2">
       {#each stack as item}
-        <div class=" p-2 sm:p-4 border border-slate-800">{item}</div>
+        <div class=" p-2 sm:p-4 border border-zinc-800">{item}</div>
       {/each}
     </div>
   </div>
-  <div class="grid grid-cols-2 border-slate-800">
+  <div class="grid grid-cols-2 border-zinc-800">
     <a
       href={githubUrl}
       target="_blank"
       rel="noreferrer"
-      class="w-100 py-2 sm:py-6 text-center underline border-r border-slate-800">GitHub</a
+      class="w-100 py-2 sm:py-6 text-center underline border-r border-zinc-800 sm:hover:bg-zinc-800 sm:hover:text-bg"
+      >GitHub</a
     >
     <a
       href={liveUrl}
       target="_blank"
       rel="noreferrer"
-      class="w-100 py-2 sm:py-6 text-center underline border-l border-slate-800">Live version</a
+      class="w-100 py-2 sm:py-6 text-center underline border-l border-zinc-800 sm:hover:bg-zinc-800 sm:hover:text-bg"
+      >Live version</a
     >
   </div>
 </section>
