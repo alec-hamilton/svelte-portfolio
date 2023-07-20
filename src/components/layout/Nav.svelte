@@ -13,7 +13,7 @@
   // };
 </script>
 
-<nav class="hidden sm:flex flex-col p-4 sm:p-6 col-span-2 border-l-4 border-slate-800">
+<nav class="hidden sm:flex flex-col p-4 sm:p-6 col-span-2 border-l-8 border-slate-800">
   <div class="sticky top-4">
     <h3 class="pb-6">About me</h3>
     <ul class="flex items-center pb-6">

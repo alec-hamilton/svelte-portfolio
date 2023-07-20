@@ -1,4 +1,4 @@
-<section class="border-b-2 border-slate-800" id="about" data-scrollable-section="true">
+<section class="border-b-8 border-slate-800" id="about" data-scrollable-section="true">
   <h2 class="p-4 sm:p-6 border-b-2 sticky top-0 bg-bg border-slate-800">About me</h2>
   <p class="p-4 sm:p-6">
     I am a full stack developer with one year of professional experience. With a solid foundation

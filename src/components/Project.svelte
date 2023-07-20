@@ -7,8 +7,8 @@
   export let liveUrl;
 </script>
 
-<section {id} data-scrollable-section="true">
-  <h3 class="p-4 sm:p-6 border-y-2 border-slate-800">{name}</h3>
+<section {id} data-scrollable-section="true" class="border-b-4 border-slate-800 last:border-0">
+  <h3 class="p-4 sm:p-6 border-b-2 border-slate-800">{name}</h3>
   <div class="p-4 sm:p-6 border-b-2 border-slate-800">
     <h4 class="pb-2 sm:pb-4">Description</h4>
     <p>{description}</p>
