@@ -3,8 +3,8 @@ export const projects = [
     name: "20th Century Flicks",
     id: "project1",
     description:
-      "I volunteered to rebuild the 20th Century Flicks website, a project that allowed me to enhance my skills in NextJS, TypeScript, and Tailwind. As a devoted film fanatic, reimagining the old site, which had been in use for 15 years, was the perfect opportunity for me. I incorporated Meilisearch, a Rust-based autocomplete search tool, enabling users to explore a vast collection of over 20,000 movies available for rental, both in-person and by post. The design takes inspiration from Bladerunner, which is my favourite flick.",
-    stack: ["NextJS", "TypeScript", "TailwindCSS", "Meilisearch"],
+      "I volunteered to rebuild the 20th Century Flicks website, a project that allowed me to enhance my skills in NextJS, TypeScript, and Tailwind. As a devoted film fanatic, reimagining the old site, which had been in use for 15 years, was the perfect opportunity for me. I incorporated Algolia and InstantSearch to handle searching the stock of movies, enabling users to explore a vast collection of over 20,000 movies available for rental, both in-person and by post. The design takes inspiration from Bladerunner, which is my favourite flick.",
+    stack: ["NextJS", "TypeScript", "TailwindCSS", "Algolia", "InstantSearch"],
     githubUrl: "https://github.com/alec-hamilton/flicks-frontend",
     liveUrl: "https://flicks-frontend.vercel.app/",
   },
